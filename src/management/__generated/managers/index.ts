@@ -29,3 +29,4 @@ export * from './tickets-manager.js';
 export * from './user-blocks-manager.js';
 export * from './users-manager.js';
 export * from './users-by-email-manager.js';
+export * from './self-service-sso-profiles-manager.js';

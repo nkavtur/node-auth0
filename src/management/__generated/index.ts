@@ -32,7 +32,7 @@ import {
   TicketsManager,
   UserBlocksManager,
   UsersManager,
-  UsersByEmailManager,
+  UsersByEmailManager, SelfServiceSsoProfilesManager
 } from './managers/index.js';
 
 import { Configuration } from '../../lib/runtime.js';
@@ -69,6 +69,7 @@ export abstract class ManagementClientBase {
   public readonly userBlocks = new UserBlocksManager(this.configuration);
   public readonly users = new UsersManager(this.configuration);
   public readonly usersByEmail = new UsersByEmailManager(this.configuration);
+  public readonly selfServiceSsoProfiles = new SelfServiceSsoProfilesManager(this.configuration);
 
   constructor(protected configuration: Configuration) {}
 }

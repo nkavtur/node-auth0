@@ -9459,6 +9459,20 @@ export interface PostOrganizationsRequest {
    */
   enabled_connections?: Array<PostOrganizationsRequestEnabledConnectionsInner>;
 }
+
+export interface PostSsoProfilesRequest {
+  saml_mappings: string[];
+  oidc_scopes: string[];
+}
+
+export interface SsoProfilesResponse {
+  id: string;
+  saml_mappings: string[];
+  oidc_scopes: string[];
+  created_at: string,
+  updated_at: string;
+}
+
 /**
  * Theme defines how to style the login pages
  */
